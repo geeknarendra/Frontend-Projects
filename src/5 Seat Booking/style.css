@@ -1,0 +1,76 @@
+body{
+margin-top:30px;
+background-color: rgba(0, 0, 0, 0.904);
+}
+
+/* .container{
+    
+    display: inline-block;
+    
+    
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    background-color: rgb(233, 229, 223);
+    padding: 15px;
+    border-radius: 10px;
+} */
+
+.container{
+    
+    display: inline-flex;
+    flex-direction: column;
+    
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    background-color: rgb(233, 229, 223);
+    padding: 2vh;
+    border-radius: 10px;
+    margin: 10px 20px 0 0;
+}
+.screen{
+    width: 70%;
+    margin: auto;
+    
+
+    border-bottom: 15px solid #555;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    margin-bottom: 50px; 
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 3px solid black;
+    column-gap: 9vh;
+    margin: auto;
+    padding: .9vh 2vh;
+    
+    justify-content: center;
+}
+
+.sqare{
+    width: 3.8vw;
+    height: 4vh;
+    border: 2px solid blue;
+}
+
+.seatinfo{
+    border: 3px solid rgb(27, 0, 44);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    
+    margin: 5px auto;
+    padding: 8px;
+}
+
+img{
+    width: 6vh;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Memory Game</h1>
+        <div class="deck Fadein">
+            <div class="card" data-cardinfo="AC">
+                <img src="./img/Card/AC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="AC">
+                <img src="./img/Card/AC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+
+            <div class="card" data-cardinfo="2C">
+                <img src="./img/Card/2C.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="2C">
+                <img src="./img/Card/2C.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+
+            <div class="card" data-cardinfo="3C">
+                <img src="./img/Card/3C.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="3C">
+                <img src="./img/Card/3C.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+
+            <div class="card" data-cardinfo="JD">
+                <img src="./img/Card/JD.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="JD">
+                <img src="./img/Card/JD.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+
+            <div class="card" data-cardinfo="QC">
+                <img src="./img/Card/QC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="QC">
+                <img src="./img/Card/QC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+
+            <div class="card" data-cardinfo="KC">
+                <img src="./img/Card/KC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+            <div class="card" data-cardinfo="KC">
+                <img src="./img/Card/KC.jpg" alt="" class="front">
+                <img src="./img/Back-face.jpg" alt="" class="back">
+            </div>
+           
+        </div>
+        <div class="score Fadein">
+            Moves:<span id="moves">0</Moves:span>
+        </div>
+        <button class="playGame" onclick="playgame()">
+            Play Game
+        </button>
+
+
+        <!-- Congratulation PopUp -->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <span class="close"  onclick="location.reload()">×</span>
+                <div class="content-1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You Made This In <span id=finalMove> </span> moves </p>
+                </div>
+                <button id="play-again" onclick="location.reload()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

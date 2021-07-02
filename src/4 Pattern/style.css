@@ -1,0 +1,63 @@
+body{
+    background-color: antiquewhite;
+}
+
+.heading{
+    position:absolute;
+    
+    left: 42%;   
+}
+
+.container{
+    position:absolute;
+    top: 20%;
+    left: 35%;
+    border: 3px solid black;
+    width: 25vw;
+    height: auto;
+   padding: 1px;
+    display: grid;
+    grid-template-columns: repeat(20,auto);
+   
+    cursor: pointer;
+}
+.square{
+
+    height: 1vw;
+    /* width: 1vw; */
+    border: 1px solid #dfa8a1cb;
+    
+}
+
+.bg-red{
+    background-color:#DE4738;
+}
+
+
+/*  Mobile Phone */
+@media only screen and (max-width: 812px) {
+    body {
+      background-color: rgba(76, 185, 221, 0.288);
+    }
+    .heading{
+        position:absolute;
+        top: 10%;
+        left: 30%;   
+    }
+    .container{
+        position:absolute;
+        top: 30%;
+        left: 23%;
+        width: 55vw;
+        height: auto;
+    
+   
+    }
+    .square{
+
+        height: 5vw;
+       
+        border: 1px solid #dfa8a1cb;
+        
+    }
+  }

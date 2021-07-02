@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./image/background.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center Center;
+    background-origin:content-box;
+    width:100%;
+    height: auto;
+   
+    overflow: hidden;
+ 
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.main{
+    width:50vh;
+    margin:100px auto;
+    background-color: rgba(240,248,255,0.6);
+    padding:20px;
+    text-align:center;
+
+}
+
+.main> *{
+    margin-bottom: 20px;
+}
+
+
+.input-box{
+    width:100%;
+    background-color: rgba(255,255,255,0.6);
+    border:none;
+    outline:none;
+    color:#582233;
+    border-radius:5px;
+    font-size:1.2rem;
+    height:50px;
+    text-align:center;
+    box-shadow: 0px 0px 10px #c1c1c1;
+}
+
+.input-box:focus{
+    background-color: rgba(255,255,255);
+}
+
+.searchAgain{
+    background-color: rgba(255,255,255);
+    font-size: 25px;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 95%; 
+    left: 50%; 
+    transform: translate(-50%, -95%);
+
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+.weather-body{
+    color:#582233;
+    padding: 60px 20px;
+    line-height: 2rem;
+    border-radius: 10px;;
+    background-color: rgba(255,255,255,0.6);
+
+    height:60vh;
+}
+
+.location-details{
+    font-weight:bold;
+}
+
+.weather-status{
+    padding:20px;
+}
+
+.temp{
+   font-size:50pt;
+   font-weight: 700;
+   margin:20px 0;
+   text-shadow: 2px 4px rgba(0,0,0,0.3);
+   
+}
+
+.min-max,.weather{
+    
+    font-size:12pt;
+    font-weight:600;
+}
+
+.img{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50px;
+}
+
+@media only screen and (max-width:768px){
+    body {    
+        background: url('./image/background.jpg') no-repeat center fixed;     
+        background-size: cover;
+    }
+    .main{
+        width:43vh;
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, -7%);
+        
+    }
+
+}

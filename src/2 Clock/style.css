@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    background: url(./image/background.png);
+   background-color: rgb(77, 51, 51); 
+    
+}
+.container{
+  
+    height: 40vw;
+    width: 40vw;
+}
+.circle{
+
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid grey; 
+    background:orangered;
+    padding: 30px;
+    top: 10%;
+
+    
+}
+
+.inner{
+position: relative;
+    background: url("./image/clock.png") no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+    
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 17px;
+
+}
+.sec{
+    position: relative;
+    height: 150px;
+    width: 3px;
+    left: 196px;
+    top:50px;
+    background:black;
+   transform-origin: bottom;
+    /* transform: rotate(0deg); */
+    /* animation: sec_anim 60s linear infinite; */
+}
+
+.min{
+    position: relative;
+    height: 130px;
+    width: 5px;
+    left: 195px;
+    top:-80px;
+
+    background:black;
+   transform-origin: bottom;
+    transform: rotate(0deg);
+    /* animation: min_anim 3600s linear infinite; */
+}
+.hour{
+   position: relative;
+    height: 110px;
+    width: 7px;
+    left: 194px;
+    top:-190px;
+
+    background:black;
+   transform-origin: bottom;
+    transform: rotate(0deg);
+    /* animation: hour_anim 216000s linear infinite; */
+}
+
+
+/* When Js Is not being Used */
+
+/* @keyframes sec_anim{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}   
+}
+@keyframes min_anim{
+    from{transform:rotate(336deg);}
+    to{transform:rotate(360deg);}   
+}
+@keyframes hour_anim{
+    from{transform:rotate(24deg);}
+    to{transform:rotate(360deg);}   
+} */

@@ -1,0 +1,38 @@
+body{
+    background: url(./image/Background.jpg);
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+
+}
+
+.ClickHere{
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
+.key{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.mouseover{
+    border-radius: 10px;
+    margin: 10px;
+}
+h2{
+    margin: 50px;
+    padding: 10px;
+    font-size: 40px;
+    font-style: italic;
+    background-color: rgba(127, 255, 212, 0.205);
+}
+.ResizeWin{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 500;
+}
+.hide{
+    visibility: hidden;
+}
